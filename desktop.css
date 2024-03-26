@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+  }
+  
+
+body{
+    background-color: hsl(235, 18%, 26%);
+    max-width: 100%;
+    max-height: 100vh;
+    font-weight: 400;
+    font-family: Roboto-regular;
+}
+
+.container{
+    color: hsl(234, 29%, 20%);
+    background-color: white;
+    width: 51vw;
+    height: 71vh;
+    margin: 10vh auto;
+    display: flex;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+}
+
+.container .left{
+    
+    margin: 4% 6%;
+}
+.container .left h1{
+    font-size: 3rem;
+    text-align: left;
+    margin: 6% 1%;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.updates p{
+    margin-bottom: 7%;
+    font-weight: 500;
+}
+
+.updates ul{
+    
+}
+
+.updates ul li{
+    margin-bottom: 3%;
+    list-style-image: url('assets/images/icon-list.svg');
+    /* width: 20px; 
+    height: 20px;  */
+    background-position: center;
+    padding-left: 4%;
+}
+
+.right{
+    position: relative;
+    right: 0;
+}
+.right img{
+    width: 23vw;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vh;
+}
+
+form label{
+    padding-bottom: 1.6vh;
+    font-weight: 700;
+}
+
+#email{
+    border: 2px solid hsl(231, 7%, 60%);
+    /* color: hsl(231, 7%, 60%); */
+    margin-bottom: 1.5vh;
+    height: 0.5vh;
+    padding: 6%;
+    border-radius: 10px;
+}
+
+.subscribe{
+    margin-top: 1vh;
+    height: 6.3vh;
+    border-radius: 10px;
+    background-color:  hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe:hover{
+    /* background-color: ; */
+    background-image: linear-gradient(to right, rgba(245, 1, 107, 0.921) , hsla(4, 91%, 57%, 0.926), hsla(21, 79%, 57%, 0.956));;
+}
+
+.success-message{
+    display: none;
+}
